@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .content {
+    padding: 2px;
+    background-color:#f0f7de;
+    justify-items: center;
+    align-items: center;
+  }
+  .blog-container {
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  div a{
+    color: #fff; 
+    display: inline-block; 
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    
+  }
+
+  h1 {
+    color: black;
+    text-align: center;
+  }
+  
+  p {
+    font-family: Consolas;
+    font-size: 20px;
+  }
+
+  a.link {
+    color: blue;
+    font-style: oblique;
+    text-decoration: none;
+  }
+
+  a.add {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color:#0d6efd;
+  }
+
+  a.edit {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+    width: 9rem;
+  }
+
+  a.delete {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    width: 10rem;
+  }
+
+  button.add{
+    color: #fff;
+    background-color: #0d6efd;
+    border-color:#0d6efd;
+    width: 10rem;
+  }
+
+  button.edit {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+    width: 10rem;
+  }
+
+  button.delete {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    width: 10rem;
+  }
+
+  .btn{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  div.post {
+    border: 1px solid green;
+    padding: 10px;
+    background-color: rgb(229, 248, 208);
+    margin-bottom: 0.25rem;
+    border-radius: 4px;
+  }
+  .blog {
+    padding-top: 10px;
+  }
+
+  

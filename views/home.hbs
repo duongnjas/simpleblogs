@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="site/css/style.css" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="content">
+        <div
+        class="blog-container"
+        style="background-color: #343a40 !important; "
+      >
+        <a>Blog</a>
+      </div>
+      {{#each posts}}
+        <div class="post">
+          <h2><a class="link" href="/detail/{{id}}">{{id}}. {{title}}</a></h2>
+          <a class="btn edit" href="/update-post/{{id}}">Sửa</a>
+          <button class="btn delete" onclick="deletePost({{id}})">Xóa</button>
+        </div>
+      {{/each}}
+      <div class="blog">
+        <a class="btn add" href="/new-post">Thêm Bài Viết</a>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript"></script>
+<script>
+  function deletePost(pId) { if (confirm("Bạn có muốn xóa bài viết này?") ===
+  true) { $.ajax({ url: "/delete-post", dataType: "json", type: "delete", data:
+  { id: pId }, success: function(data) { if (data==200) { location.reload(); }
+  else{ alert("Error"); } } }); }; }
+</script>
